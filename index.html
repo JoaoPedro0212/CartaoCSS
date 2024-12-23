@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visitas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .cartao {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .frente, .verso {
+            width: 700px;
+            height: 450px;
+            border: 3px solid ;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .frente {
+            background-image: url(download.jpeg);
+
+        }
+        .frente h1 {
+            color: #D1DDED;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 
+                -2px -2px 0 black,  
+                 2px -2px 0 black,
+                -2px  2px 0 black,
+                 2px  2px 0 black;
+        }
+        .verso {
+            background-image: url(montanha\ azul.jpeg);
+        }
+        .verso img {
+            width: 260px;
+            height: 290px;
+            border-radius: 20%;
+            margin-bottom: 10px;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            transform: translateX(-50%);
+            border: 2px solid;
+        }
+        .text_verso {
+            position: absolute;
+            top: 140px;
+            width: 800%;
+            left: 500px;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            text-shadow: 
+                -2px -2px 0 black,  
+                 2px -2px 0 black,
+                -2px  2px 0 black,
+                 2px  2px 0 black;
+        }
+        .text_verso h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #D1DDED;
+        }
+        .text_verso p {
+            margin: 5px 0;
+            font-size: 17px;
+            color: #B3D6F9;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartao">
+        <div class="frente">
+            <h1>Pedro Pinheiro - Web Developer</h1>
+        </div>
+        <div class="verso">
+            <img src="perfil.jpeg.png" alt="foto de perfil">
+            <div class="text_verso">
+                <h2>João Pedro Pinheiro de Sousa</h2>
+                <p>Futuro cargo/profissão: Web Developer</p>
+                <p>Telefone: (85) 9 8125-1289</p>
+                <p>Email: pinheiro.joao11@ifce.edu.br</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
